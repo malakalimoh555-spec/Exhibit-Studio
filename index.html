@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibit Studio</title>
+    <link rel="stylesheet" href="test15.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <span>EXHIBIT</span>
+            <span class="slash">/</span>
+            <span class="studio">STUDIO</span>
+        </div>
+
+        <nav class="nav">
+            <a href="#" class="active">GALLERY</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACT</a>
+        </nav>
+<button class="menu-toggle" type="button"
+        aria-label="Open navigation"
+        aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+    </header>
+
+    <section class="hero">
+
+        <p class="category">PHOTOGRAPHY · 2025</p>
+
+        <h1>
+            Light &amp;<br>
+            <strong>Shadow</strong>
+        </h1>
+
+        <div class="hero-info">
+            <p class="count">24 Photographs</p>
+
+            <span class="line"></span>
+
+            <p class="description">
+                A study of contrast — moments suspended between darkness<br class="desktop">
+                and the searching, persistent light.
+            </p>
+        </div>
+
+    </section>
+
+<section class="gallery">
+
+    <!-- Categories -->
+    <div class="filters">
+        <a href="#" class="filter active">ALL</a>
+        <a href="#" class="filter">PORTRAIT</a>
+        <a href="#" class="filter">LANDSCAPE</a>
+        <a href="#" class="filter">URBAN</a>
+        <a href="#" class="filter">NATURE</a>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid">
+
+        <!-- Column 1 -->
+        <div class="gallery-column">
+            <div class="photo photo1">
+                <img src="thumb-exhibit-01.jpg" alt="Vintage camera parts">
+            </div>
+
+            <div class="photo photo2">
+                <img src="thumb-exhibit-02.jpg" alt="Portrait in sunlight">
+            </div>
+
+            <div class="photo photo3">
+                <img src="thumb-exhibit-03.jpg" alt="City at sunset">
+            </div>
+
+            <div class="photo photo4">
+                <img src="thumb-exhibit-04.jpg" alt="Blue mountains">
+            </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="gallery-column">
+            <div class="photo photo5">
+                <img src="thumb-exhibit-05.jpg" alt="Sea and cloudy sky">
+            </div>
+
+            <div class="photo photo6">
+                <img src="thumb-exhibit-06.jpg" alt="Dark sea">
+            </div>
+
+            <div class="photo photo7">
+                <img src="thumb-exhibit-07.jpg" alt="Rainy window">
+            </div>
+
+            <div class="photo photo8">
+                <img src="thumb-exhibit-08.jpg" alt="Colorful sunset over the sea">
+            </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="gallery-column">
+            <div class="photo photo9">
+                <img src="thumb-exhibit-09.jpg" alt="Forest in the fog">
+            </div>
+
+            <div class="photo photo10">
+                <img src="thumb-exhibit-10.jpg" alt="Lighthouse">
+            </div>
+
+            <div class="photo photo11">
+                <img src="thumb-exhibit-11.jpg" alt="Bridge walkway">
+            </div>
+
+            <div class="photo photo12">
+                <img src="thumb-exhibit-12.jpg" alt="Cyclists in motion">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<footer class="footer">
+
+    <div class="footer-info">
+        <h3>EXHIBIT STUDIO</h3>
+
+        <p>
+            Free CSS template by
+            <a href="https://www.tooplate.com/">Tooplate</a>.
+        </p>
+
+        <p>
+            Photos via
+            <a href="https://picsum.photos/">Lorem Picsum</a>.
+            Free for personal &amp; commercial use.
+        </p>
+    </div>
+
+    <nav class="footer-nav">
+        <a href="#">GALLERY</a>
+        <a href="#">ABOUT</a>
+        <a href="#">CONTACT</a>
+    </nav>
+
+</footer>
+
+
+
+
+<script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav");
+
+    menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("nav-open");
+
+        const isOpen = nav.classList.contains("nav-open");
+
+        menuToggle.setAttribute("aria-expanded", isOpen);
+        menuToggle.setAttribute(
+            "aria-label",
+            isOpen ? "Close navigation" : "Open navigation"
+        );
+    });
+</script>
+
+</body>
+</html>
